@@ -662,6 +662,9 @@ footer.end-page{
     
 }
 .open-close-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 24px;
     height: 24px;
     background-color: #E7E9FC;
@@ -698,8 +701,8 @@ footer.end-page{
     
 }
 
-.open-close-btn .closer-icon:hover,
-.open-close-btn .closer-icon:focus{
+.open-close-btn:hover .closer-icon,
+.open-close-btn:focus .closer-icon{
     fill: #ffffff;
 }
 .form-name{
@@ -735,6 +738,34 @@ footer.end-page{
 .container-input{
     position: relative;
 }
+.modal-form input{
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form input:hover{
+    border-color: #4D5AE5;
+}
+
+.icon-modal {
+    display: inline-block;
+    stroke: #2E2F42;
+    fill: #2E2F42;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.modal-form input:focus .icon-modal{
+    fill: #4D5AE5;
+}
 .Privacy {
     
     margin: 0 auto;
@@ -767,20 +798,8 @@ footer.end-page{
     text-decoration-skip-ink: none;
     color: #4d5ae5;
 }
-.modal-form input{
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    width: 360px;
-    height: 40px;
-    padding-left: 35px;
-    
-}
-.modal-form input:hover,
-.modal-form input:focus,
-.modal-form input:active{
-    border: 1px solid #4d5ae5;
-    
-}
+
+
 .modal-text textarea{
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -803,18 +822,7 @@ footer.end-page{
     position: relative;
 }
 
-.icon-modal{
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    stroke-width: 0;
-    stroke: #2E2F42;
-    fill: #2E2F42;
-    position: absolute;
-    top: 50%;
-    left: 19px;
 
-}
 
 .label-modal{
     font-family: "Roboto", sans-serif;
