@@ -821,8 +821,9 @@ button:focus .closer-icon{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    color: #8e8f99;;
 }
-.visually-hidden:checked + .box-label{
+input:checked + .box-label{
     background-color: #404bbf;
     border: none;
     fill:#F4F4FD;
