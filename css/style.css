@@ -558,6 +558,7 @@ footer.end-page{
 }
 .subscribe{
     display: flex;
+    gap: 24px;
 
 
 }
@@ -568,7 +569,7 @@ footer.end-page{
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-bottom: 16px;
+    /*margin-bottom: 16px;*/
 }
 .inpt-holder{
     border: 1px solid #fff;
@@ -626,22 +627,18 @@ footer.end-page{
     justify-content: center;
     align-items: center;
     background-color: #31d0aa;
-    /*position: relative;*/
+    
 }
 
 .modal-box{
     width:408px;
-    /*background-color: #fff;*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     border-radius: 4px;
-   /* margin: 0 24px 0 24px;*/
-   /*position: absolute;
-   top: 50%;
-   right:50%;*/
+   
     
 }
 .open-close-icon{
@@ -688,10 +685,8 @@ footer.end-page{
     margin-bottom: 16px;
 }
 .modal-label{
-    /*width: 360px;*/
     display: flex;
     flex-direction: column;
-    /*padding: 0 24px;*/
     margin-bottom: 4px;
     margin: 0 auto;
 
