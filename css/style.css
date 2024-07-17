@@ -571,18 +571,23 @@ footer.end-page{
     color: #fff;
     margin-bottom: 16px;
 }
-.inpt-holder{
+.input-holder{
     border: 1px solid #fff;
     border-radius: 4px;
     background-color: #2E2F42;
     width: 264px;
     height: 40px;
-    margin-right: 24px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
 
 }
-.inpt-holder::placeholder{
+.input-holder::placeholder{
     color: #fff;
-    padding: 8px 0 8px 16px;
     
 }
 .btn-icon {
