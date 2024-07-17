@@ -569,7 +569,7 @@ footer.end-page{
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #fff;
-    /*margin-bottom: 16px;*/
+    margin-bottom: 16px;
 }
 .inpt-holder{
     border: 1px solid #fff;
