@@ -349,7 +349,7 @@
     </footer>
    <div class="modal-overlay">
         <div class="modal-box">
-           <button class="open-close-icon">
+           <button class="open-close-btn" type="button">
                 <svg class="closer-icon" width="8" height="8">
                     <use href="./images/modal-icons.svg#icon-close-icon"></use>
                 </svg>
@@ -357,22 +357,25 @@
             <p class="form-name">Leave your contacts and we will call you back</p>
             <form class="modal-form">
                 <div class="modal-label">
-                   <label class="label-modal" for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="">
+                   <label class="label-modal" for="user-name">Name</label>
+                   <div class="container-input">
+                    <input type="text" name="name" id="user-name" placeholder="">
                     <svg class="icon-modal" width="16" height="16"><use href="./images/modal-icons.svg#icon-man-icon"></use></svg>
-                
+                </div>
                 </div>
                 <div class="modal-label">
                    <label class="label-modal" for="phone">Phone</label>
-                    
+                    <div class="container-input">
                     <input type="tel" name="phone"  id="phone" placeholder="">
                     <svg class="icon-modal" width="13" height="13"><use href="./images/modal-icons.svg#icon-phone-icon"></use></svg>
+                    </div>
                 </div>
                 <div class="modal-label">
                     <label class="label-modal" for="email">Email</label>
-                    
+                    <div class="container-input">
                     <input type="email" name="email"  id="email" placeholder="">
                     <svg class="icon-modal" width="16" height="12"><use href="./images/modal-icons.svg#icon-email-icon"></use></svg>
+                    </div>
                 </div>
                 <label class="label-modal" for="comment">Comment</label>
                 <div class="modal-text">
