@@ -644,7 +644,7 @@ footer.end-page{
 }
 
 .modal-box{
-    width:408px;
+    max-width:408px;
     min-height: 584px;
     display: flex;
     flex-wrap: wrap;
@@ -823,7 +823,7 @@ button:focus .closer-icon{
     letter-spacing: 0.04em;
     color: #8e8f99;;
 }
-input:checked + .box-label{
+input:checked .box-label{
     background-color: #404bbf;
     border: none;
     fill:#F4F4FD;
