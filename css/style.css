@@ -823,7 +823,7 @@ button:focus .closer-icon{
     letter-spacing: 0.04em;
     color: #8e8f99;;
 }
-input:checked + label > span{
+.visually-hidden:checked + .check-box-label > .box-label{
     background-color: #404bbf;
     border: none;
     fill:#F4F4FD;
