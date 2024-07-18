@@ -32,8 +32,6 @@ p {
 }
 main {
     flex-grow: 1;
-    max-width: 1440px;
-    margin: 0 auto;
 }
 img{
     display: block;
@@ -44,8 +42,6 @@ img{
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
-    max-width: 1440px;
-    margin: 0 auto;
     
 }
 
@@ -176,14 +172,13 @@ img{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /*max-width: 1440px;*/
+    max-width: 1440px;
     margin: 0 auto;
     
 }
 .solution .container{
    
     align-items: center;
-    max-width: 1440px;
     }
 
 .solution-item{
@@ -468,8 +463,6 @@ div.benefits-icon{
 footer.end-page{
     padding: 100px 0 100px;
     background-color: #2e2f42;
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
 .end-page .logo-footer{
@@ -547,12 +540,9 @@ footer.end-page{
 }
 
 .social-media{
-    margin-right: 80px;
+    margin-right: auto;
 }
 .subscribe-box{
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
 }
 .subscribe{
     display: flex;
@@ -589,11 +579,6 @@ footer.end-page{
     
 }
 .btn-icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: #fff;
     fill: #fff;
     margin-left: 16px;
 }
@@ -606,7 +591,6 @@ footer.end-page{
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    gap: 8px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 8px 24px;
     min-width: 165px;
@@ -638,15 +622,20 @@ footer.end-page{
     align-items: center;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    opacity: 0;
+    pointer-events: none;
     
+}
+.modal-overlay.is-open{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .modal-box{
     width:408px;
     min-height: 584px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     border-radius: 4px;
@@ -713,28 +702,21 @@ button:focus .closer-icon{
     margin-bottom: 16px;
 }
 .modal-form{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
     margin: 0 auto;
-    column-gap: 8px;
     margin-bottom: 16px;
 }
 .modal-label{
     display: flex;
     flex-direction: column;
-    margin-bottom: 4px;
-    margin: 0 auto;
     margin-bottom: 8px;
 
 }
 .label-modal{
-    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    margin-bottom: 4px;
 }
 .label-modal:placeholder-shown{
     color: #8e8f99;
@@ -757,9 +739,6 @@ button:focus .closer-icon{
 }
 
 .icon-modal {
-    display: inline-block;
-    stroke: #2E2F42;
-    /*fill: #2E2F42;*/
     position: absolute;
     top: 50%;
     left: 16px;
@@ -773,9 +752,8 @@ button:focus .closer-icon{
 
 
 .text-box{
-    margin-bottom: 16px;
+    margin-bottom: 4px;
 }
-
 .text-area{
     width: 100%;
     height: 120px;
@@ -790,6 +768,7 @@ button:focus .closer-icon{
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 16px;
 
 }
 
@@ -799,20 +778,11 @@ button:focus .closer-icon{
 
 .modal-label-checkbox {
     margin-bottom: 24px;
+
 }
 
 .visually-hidden{
     display: none;
-    /*position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;*/
 }
 
 .icon-check{
@@ -850,6 +820,7 @@ button:focus .closer-icon{
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 
@@ -860,8 +831,7 @@ button:focus .closer-icon{
     min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #4d5ae5;
-    color:#fff;
+    background-color: #4d5ae5;
     margin: 0 auto;
     margin-bottom: 24px;
     font-family: "Roboto", sans-serif;
@@ -874,8 +844,8 @@ button:focus .closer-icon{
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form .modal-btn:hover
-.modal-form .modal-btn:focus{
+.modal-btn:hover,
+.modal-btn:focus{
     background-color: #404bbf;
 }
 
