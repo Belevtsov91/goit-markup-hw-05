@@ -268,8 +268,6 @@ div.benefits-icon{
     stroke: currentColor;
     fill: currentColor;
     position: absolute;
-    /*top: 24px;
-    left: 100px;*/
 }
 .benefits-item{
     font-weight: 500;
@@ -817,11 +815,18 @@ button:focus .closer-icon{
     overflow: hidden;*/
 }
 
+.icon-check{
+    display: inline-block;
+    stroke-width: 0;
+    stroke: currentColor;
+    /*fill: currentColor;*/
+}
+
 .check-box-label{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #8e8f99;;
+    color: #8e8f99;
 }
 .visually-hidden:checked + .check-box-label > .box-label{
     background-color: #404bbf;
@@ -830,7 +835,7 @@ button:focus .closer-icon{
 }
 
 .a-check{
-    color: #4d5ae5;;
+    color: #4d5ae5;
 }
 
 .box-label{
@@ -866,9 +871,11 @@ button:focus .closer-icon{
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
-    background-color: #4D5AE5;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.modal-form .modal-btn:hover
+.modal-form .modal-btn:focus{
+    background-color: #404bbf;
+}
 
